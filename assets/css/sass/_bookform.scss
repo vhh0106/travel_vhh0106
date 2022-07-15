@@ -1,0 +1,23 @@
+.bookform {
+  margin-top: -7rem;
+  .container {
+    padding: 3rem 2rem;
+    background: #222;
+    border-radius: 1rem;
+  }
+  &-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 0 1.5rem;
+    flex-wrap: wrap;
+    .inpubox {
+      flex: 1 1 25rem;
+    }
+    .btn {
+      flex: 1 1 15rem;
+      @include breakpoint(545) {
+        margin-top: 3rem;
+      }
+    }
+  }
+}

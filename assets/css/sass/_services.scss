@@ -1,0 +1,28 @@
+.services {
+  &-header {
+    text-align: center;
+  }
+  &-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    grid-gap: 1.5rem;
+  }
+  .box {
+    background: #222;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 0.2rem solid #111;
+    &:hover {
+      border: 2px solid $blue;
+    }
+    i {
+      font-size: 4rem;
+      color: $blue;
+      margin-bottom: 1.5rem;
+    }
+    .heading-medium {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

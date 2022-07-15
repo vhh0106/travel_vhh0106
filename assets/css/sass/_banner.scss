@@ -1,0 +1,14 @@
+.banner {
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3rem 2rem;
+  &-content {
+    margin: 0 auto;
+    max-width: 675px;
+    text-align: center;
+    .text-small {
+      margin-bottom: 3rem;
+    }
+  }
+}

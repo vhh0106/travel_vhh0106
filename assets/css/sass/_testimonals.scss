@@ -1,0 +1,48 @@
+.testimonals {
+  margin-top: 2rem;
+  &-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    @include breakpoint(1023) {
+      flex-direction: column;
+    }
+  }
+  &-header {
+    flex: 1 1 42rem;
+    @include breakpoint(1023) {
+      flex: auto;
+      margin-bottom: 2rem;
+    }
+  }
+  &-card {
+    display: flex;
+    flex: 1 1 42rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    .box {
+      flex: 1 1 20rem;
+      background: #222;
+      border-radius: 1rem;
+      border: 0.2rem solid #111;
+      padding: 1.5rem;
+      &:hover {
+        border: 2px solid $blue;
+      }
+    }
+    .text-small {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}

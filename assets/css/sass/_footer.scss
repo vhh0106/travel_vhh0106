@@ -1,0 +1,50 @@
+.footer {
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 1.5rem;
+  }
+  .icon {
+    margin-top: 3rem;
+    .btn-icon {
+      font-size: 1.5rem;
+      border-radius: 50%;
+      border: 2px solid $blue;
+      color: $blue;
+      padding: 1rem 1.2rem;
+      text-align: center;
+      margin-right: 1rem;
+      &:hover {
+        background-color: $blue;
+        color: $black;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    &-link {
+      font-size: 1.4rem;
+      color: $light-color;
+      i {
+        color: $blue;
+        margin-right: 1rem;
+      }
+      &:hover i {
+        padding-right: 1rem;
+      }
+    }
+  }
+  .text-small {
+    margin-top: 2rem;
+    i {
+      color: $blue;
+      margin-right: 1rem;
+    }
+  }
+  form {
+    margin-bottom: 3rem;
+  }
+}
